@@ -1,4 +1,5 @@
-//화면 스크롤
+$(function(){
+    //화면 스크롤
 const gnbBtn = document.querySelectorAll("#header > .gnb > li")
 const contBox = document.querySelectorAll("#container > div");          //중간영역
 const sideBtn = document.querySelectorAll("#sideBtn > li");             //버튼 4개
@@ -217,25 +218,31 @@ cont3right.addEventListener("click",()=>{
 //변수설정
 
 // const cont4box = document.querySelector(".cont4_wrap .cont4_box");
-const cont4wrap = document.querySelectorAll(".cont4_wrap > div");
+// const cont4wrap = document.querySelectorAll(".cont4_wrap > div");
 
-for (let i=0; i<cont4wrap.length; i++){
+
+
+
+// for (let i=0; i<cont4wrap.length; i++){
     
-    cont4wrap[i].addEventListener("mouseover",(e)=>{
+//     cont4wrap[i].addEventListener("mouseover",(e)=>{
 
-        e.currentTarget.classList.add("on");
+//         e.currentTarget.classList.add("on");
         
-    });
+//     });
 
-    cont4wrap[i].addEventListener("mouseout",()=>{
+//     cont4wrap[i].addEventListener("mouseout",()=>{
     
-        for(let i=0; i<cont4wrap.length; i++){
+//         for(let i=0; i<cont4wrap.length; i++){
     
-            cont4wrap[i].classList.remove("on");
-        }
+//             cont4wrap[i].classList.remove("on");
+//         }
     
-    });
+//     });
     
 
-}
+// }
+});
+
+
 
